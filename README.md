@@ -1,2 +1,2 @@
-# DevOps-Hometasks-BodniaAlex
+# DevOps-Hometasks
 This is my homeworks
