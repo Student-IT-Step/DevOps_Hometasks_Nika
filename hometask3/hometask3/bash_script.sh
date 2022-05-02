@@ -2,10 +2,10 @@
 sudo find / -type l -exec ls -la '{}' \;
 
 echo "find and print count of block and character devices"
-find / -type b -or -type c | wc -l
+find / -type b -or -type c | wc -l >devices.txt
 
 echo "find all folders with Sticky bit"
-sudo find / -type d -perm -1000 -exec ls -ld {} \;
+sudo find / -type d -perm -1000 -exec ls -ld {} \; > 8bit
 
 echo "make soft link for /etc/hostname in /tmp folder"
 sudo ln -s /etc/hostname /tmp/hostname_new
